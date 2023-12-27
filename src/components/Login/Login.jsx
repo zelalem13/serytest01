@@ -65,7 +65,7 @@ return (
   
     <div className="teret">
       <Cards>
-    <div className="tedr"> 
+    <div className="tedr" > 
        <h1 className="title">Logged to your Account</h1>
         <form onSubmit={handleSubmit}>
           <div className="inputs_container">
@@ -94,20 +94,22 @@ return (
           
         </div>
         <input type="checkbox" name="" id="login-checkbox"/> 
-        <label className="fal" for="login-checkbox">Remember Me</label>
-        <input type="submit" value="Log In" className="login_button" />
+        <label className="fal" display="flex" justify-content="center" for="login-checkbox">Remember Me</label>
+        <input type="submit" value="Sign in" className="login_button" />
       </form>
       <div className="link_container">
         <a href="/" className="small">
-          Forgot Password?
+          Forgot the Password?
         </a>
       </div>
-        <label>Or continue with:</label>
+        <label className="fall">or continue with</label>
         <div id="iconGroup" className="test12">
-        <FacebookIcon style={{ color: '#1266f1' }} />
-        <GoogleIcon style={{ color: '#EA4335' }} />
-        <AppleIcon style={{ color: '#000' }} />
+        <FacebookIcon className="facebookI" style={{ color: '#1266f1' }} />
+        <GoogleIcon className="googleI" style={{ color: '#EA4335' }} />
+        <AppleIcon className="appleI" style={{ color: '#000' }} />
         </div>
+        <label className="fall1">Don't have an account?</label>
+        <input type="submit" value="Sign up" className="login_button1" />
       </div>
       </Cards>
       </div>
